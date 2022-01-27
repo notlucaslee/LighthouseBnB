@@ -199,7 +199,8 @@ const addProperty = function(property) {
       property.parking_spaces,
       property.number_of_bathrooms,
       property.number_of_bedrooms
-    ]).then((result) => {
+    ])
+    .then((result) => {
       return result.rows[0];
     })
     .catch((err) => {
